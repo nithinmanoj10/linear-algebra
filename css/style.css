@@ -24,6 +24,7 @@ p {
   grid-template-columns: 1fr;
   width: 90%;
   margin: 2rem auto;
+  margin-bottom: 3rem;
 }
 
 .content__heading {
@@ -109,5 +110,48 @@ header .name__authors {
   font-size: 0.9rem;
   color: #ffc14f;
   padding: 10px 0;
+}
+
+header .nav {
+  position: fixed;
+  width: 100%;
+  left: 0%;
+  bottom: 0%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+}
+
+header .nav__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+
+header .nav__list__item {
+  margin: 0%;
+  background-color: #eeeeee;
+  transition: all 0.2s;
+}
+
+header .nav__list__item:hover {
+  background-color: #fbfbfb;
+}
+
+header .nav__list__item__link {
+  display: block;
+  display: flex;
+}
+
+header .nav__list__item__link {
+  border-left: 1px solid #dbdbdb;
+}
+
+header .nav__list__item__link .nav__icon {
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+}
+
+header .nav .invisible {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

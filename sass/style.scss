@@ -24,6 +24,7 @@ p {
   grid-template-columns: 1fr;
   width: 90%;
   margin: 2rem auto;
+  margin-bottom: 3rem;
 }
 
 .content {
@@ -118,6 +119,48 @@ header {
       font-size: 0.9rem;
       color: #ffc14f;
       padding: 10px 0;
+    }
+  }
+
+  .nav {
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px,
+      rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      list-style-type: none;
+      &__item {
+        margin: 0%;
+        background-color: #eeeeee;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: #fbfbfb;
+        }
+
+        &__link {
+          display: block;
+
+          &:not(&:last-child) {
+            border-left: 1px solid #dbdbdb;
+          }
+
+          display: flex;
+          .nav__icon {
+            width: 2rem;
+            height: 2rem;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .invisible {
+      display: none;
     }
   }
 }
