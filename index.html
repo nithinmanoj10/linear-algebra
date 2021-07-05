@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Box</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://textbooks.math.gatech.edu/ila/static/images/gatech.gif"
+        alt="Bee Logo"
+        class="logo"
+      />
+      <div class="name">
+        <a href="#" class="name__site">
+          <h1>Interactive Linear Algebra</h1>
+        </a>
+        <h2 class="name__authors">Dan Margalit, Joseph Rabinoff</h2>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <h1 class="content__heading">5.1 &nbsp;  Eigenvalues and Eigenvectors</h1>
+
+        <div class="content__objectives">
+
+          <h2 class="content__objectives__heading">Objectives</h2>
+          <ul class="content__objectives__list">
+            <li class="content__objectives__list__items">
+              Learn the definition of eigenvector and eigenvalue.
+            </li>
+            <li class="content__objectives__list__items">
+              Learn to find eigenvectors and eigenvalues geometrically.
+            </li>
+            <li class="content__objectives__list__items">
+              Learn to decide if a number is an eigenvalue of a matrix, and if
+              so, how to find an associated eigenvector.
+            </li>
+            <li class="content__objectives__list__items">
+              Recipe: find a basis for the λ -eigenspace.
+            </li>
+            <li class="content__objectives__list__items">
+              Pictures: whether or not a vector is an eigenvector, eigenvectors
+              of standard matrix transformations.
+            </li>
+            <li class="content__objectives__list__items">
+              Theorem: the expanded invertible matrix theorem.
+            </li>
+            <li class="content__objectives__list__items">
+              Vocabulary word: eigenspace.
+            </li>
+            <li class="content__objectives__list__items">
+              Essential vocabulary words: eigenvector, eigenvalue.
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          In this section, we define eigenvalues and eigenvectors. These form
+          the most important facet of the structure theory of square matrices.
+          As such, eigenvalues and eigenvectors tend to play a key role in the
+          real-life applications of linear algebra.
+        </p>
+
+        <h2 class="content__sub-heading">Eigenvalues and Eigenvectors</h2>
+
+        <p>
+          The German prefix “eigen” roughly translates to “self” or “own”. An
+          eigenvector of A is a vector that is taken to a multiple of itself by
+          the matrix transformation T ( x )= Ax , which perhaps explains the
+          terminology. On the other hand, “eigen” is often translated as
+          “characteristic”; we may think of an eigenvector as describing an
+          intrinsic, or characteristic, property of A .
+        </p>
+
+        <div class="content__note">
+          <p>Note Eigenvalues and eigenvectors are only for square matrices.</p>
+        </div>
+
+        <div class="content__facts">
+          <p>Eigenvectors are by definition nonzero.</p>
+          <p>Eigenvalues may be equal to zero.</p>
+        </div>
+
+        <div class="content__conclusion">
+          <p>
+            If someone hands you a matrix A and a vector v , it is easy to check
+            if v is an eigenvector of A : simply multiply v by A and see if Av
+            is a scalar multiple of v . On the other hand, given just the matrix
+            A , it is not obvious at all how to find the eigenvectors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

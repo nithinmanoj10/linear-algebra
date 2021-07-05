@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+li,
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.content {
+  &__heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__objectives {
+    border-left: 2px #ffc14f solid;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 2rem;
+
+    &__heading {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    &__list {
+      list-style: decimal;
+
+      margin-left: 2rem;
+      &__items {
+        &:not(&:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__sub-heading {
+  }
+
+  &__note {
+  }
+
+  &__facts {
+  }
+
+  &__conclusion {
+  }
+}
+
+header {
+  background-color: #262626;
+  text-align: center;
+
+  .logo {
+    width: 12.5%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .name {
+    &__site {
+      font-family: "Bree Serif", serif;
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    &__authors {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #ffc14f;
+      padding: 10px 0;
+    }
+  }
+}
