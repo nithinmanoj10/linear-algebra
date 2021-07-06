@@ -114,6 +114,7 @@ li {
 header {
   background-color: #262626;
   text-align: center;
+  position: relative;
 
   .logo {
     width: 12.5%;
@@ -138,49 +139,49 @@ header {
       padding: 10px 0;
     }
   }
+}
 
-  .nav {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    left: 0%;
-    bottom: 0%;
+.nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0%;
+  bottom: 0%;
 
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px,
-      rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
-    &__list {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      list-style-type: none;
-      &__item {
-        margin: 0%;
-        background-color: #eeeeee;
-        transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    &__item {
+      margin: 0%;
+      background-color: #eeeeee;
+      transition: all 0.2s;
 
-        &:hover {
-          background-color: #fbfbfb;
+      &:hover {
+        background-color: #fbfbfb;
+      }
+
+      &__link {
+        display: block;
+        padding: 0.4rem 0;
+
+        &:not(&:last-child) {
+          border-left: 1px solid #dbdbdb;
         }
 
-        &__link {
-          display: block;
-          padding: 0.4rem 0;
-
-          &:not(&:last-child) {
-            border-left: 1px solid #dbdbdb;
-          }
-
-          display: flex;
-          .nav__icon {
-            width: 2rem;
-            height: 2rem;
-            margin: auto;
-          }
+        display: flex;
+        .nav__icon {
+          width: 2rem;
+          height: 2rem;
+          margin: auto;
         }
       }
     }
-    .invisible {
-      display: none;
-    }
+  }
+  .invisible {
+    display: none;
   }
 }
 
@@ -189,9 +190,9 @@ header {
     display: flex;
 
     .logo {
-      width: 10%;
+      width: 90px;
       height: auto;
-      margin-left: 1rem;
+      margin-left: 5%;
     }
 
     .name {
@@ -213,10 +214,19 @@ header {
       }
     }
   }
-}
-
-@media (min-width: 800px) {
   .container {
     width: 700px;
+  }
+}
+
+@media (min-width: 850px) {
+  .nav {
+    position: sticky;
+    top: 0%;
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
 }
