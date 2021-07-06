@@ -6,7 +6,7 @@
   overflow-y: scroll;
   width: 100%;
   transform: translateX(-100%);
-  margin-bottom: 3rem;
+  margin-bottom: 2.8rem;
   transition: all 0.7s;
   z-index: 50;
   scrollbar-width: thin;
@@ -49,6 +49,16 @@
 .side-menu__chapter__list__item__link:hover {
   background-color: #ffe7bb;
   color: #000;
+}
+
+.expand {
+  transform: translateX(0);
+}
+
+@media (min-width: 650px) {
+  .side-menu {
+    width: 60%;
+  }
 }
 
 *,
@@ -226,5 +236,38 @@ header .nav__list__item__link .nav__icon {
 
 header .nav .invisible {
   display: none;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+  }
+  header .logo {
+    width: 10%;
+    height: auto;
+    margin-left: 1rem;
+  }
+  header .name {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  header .name__site {
+    font-size: 1rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  header .name__authors {
+    padding: 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 700px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

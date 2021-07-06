@@ -6,13 +6,9 @@
   overflow-y: scroll;
   width: 100%;
   transform: translateX(-100%);
-  margin-bottom: 3rem;
+  margin-bottom: 2.8rem;
   transition: all 0.7s;
   z-index: 50;
-
-  //   &:hover {
-  //     transform: translateX(0);
-  //   }
 
   scrollbar-width: thin;
 
@@ -52,5 +48,15 @@
         }
       }
     }
+  }
+}
+
+.expand {
+  transform: translateX(0);
+}
+
+@media (min-width: 650px) {
+  .side-menu {
+    width: 60%;
   }
 }

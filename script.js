@@ -7,14 +7,20 @@ console.log(sideMenuBar);
 console.log(menuButton);
 
 menuButton.addEventListener("click",function(){
-    menuButton.classList.toggle(".buttonActive");
-    if(menuButton.classList.contains(".buttonActive")){
-        sideMenuBar.style.transform = "translateX(0)";
+    menuButton.classList.toggle("buttonActive");
+    if(menuButton.classList.contains("buttonActive")){
+        sideMenuBar.classList.add("expand")
         sideMenuBar.scrollTop = 0;
-        content.style.opacity = "0";
+        content.style.opacity = "0.7";
     }
     else{
-        sideMenuBar.style.transform = "translateX(-100%)";
+        sideMenuBar.classList.remove("expand");
         content.style.opacity = "1";
     }
+})
+
+content.addEventListener("click",function(){
+    sideMenuBar.classList.remove("expand");
+    content.style.opacity = "1";
+    menuButton.classList.remove("buttonActive");
 })
