@@ -143,7 +143,7 @@ header {
 
 .nav {
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   width: 100%;
   left: 0%;
   bottom: 0%;
@@ -154,28 +154,43 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
+
+    .empty {
+      background-color: #eeeeee;
+      margin: 0%;
+      border-left: 1px solid #dbdbdb;
+      display: none;
+    }
+
     &__item {
       margin: 0%;
       background-color: #eeeeee;
       transition: all 0.2s;
+      display: flex;
+      justify-content: center;
 
       &:hover {
         background-color: #fbfbfb;
       }
 
+      border-left: 1px solid #dbdbdb;
+
       &__link {
         display: block;
         padding: 0.4rem 0;
-
-        &:not(&:last-child) {
-          border-left: 1px solid #dbdbdb;
-        }
+        flex: 1;
 
         display: flex;
+
         .nav__icon {
           width: 2rem;
           height: 2rem;
           margin: auto;
+        }
+
+        h2 {
+          margin: auto;
+          font-size: 1rem;
         }
       }
     }
@@ -192,7 +207,7 @@ header {
     .logo {
       width: 90px;
       height: auto;
-      margin-left: 5%;
+      margin-left: 2%;
     }
 
     .name {
@@ -223,10 +238,19 @@ header {
   .nav {
     position: sticky;
     top: 0%;
+    z-index: 10;
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: 50px 100px 1fr repeat(3, 50px);
+    }
+
+    .invisible {
+      display: flex;
+    }
+
+    .empty {
+      display: block;
     }
   }
 }
