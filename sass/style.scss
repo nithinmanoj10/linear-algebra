@@ -1,3 +1,5 @@
+@import "./Layouts/sideMenu";
+
 *,
 *::before,
 *::after {
@@ -7,8 +9,18 @@
 }
 
 h1,
-h2 {
+h2,
+h4 {
   font-family: "Inter", sans-serif;
+}
+
+html {
+  scrollbar-width: thin;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 li,
@@ -19,12 +31,16 @@ p {
   line-height: 1.5;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
   width: 90%;
   margin: 2rem auto;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .content {
@@ -145,6 +161,7 @@ header {
 
         &__link {
           display: block;
+          padding: 0.4rem 0;
 
           &:not(&:last-child) {
             border-left: 1px solid #dbdbdb;

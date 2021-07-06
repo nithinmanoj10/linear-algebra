@@ -1,0 +1,40 @@
+.side-menu {
+  background-color: #262626;
+  position: fixed;
+  height: 90vh;
+  width: 100%;
+
+  overflow-y: auto;
+
+  scrollbar-width: thin;
+
+  &__chapter {
+    margin: 1rem 0;
+    &__heading {
+      display: block;
+      background-color: #d49318;
+      padding: 0.4rem 0.8rem;
+      font-size: 1.2rem;
+
+      &:hover {
+        background-color: #ffc14f;
+      }
+    }
+
+    &__list {
+      &__item {
+        margin: 0;
+        &__link {
+          padding: 0.2rem 1.4rem;
+          display: block;
+          color: #fff;
+          transition: all 0.1s;
+          &:hover {
+            background-color: #ffe7bb;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
