@@ -1,14 +1,23 @@
 .side-menu {
   background-color: #262626;
   position: fixed;
-  height: 90vh;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
   width: 100%;
-  overflow-y: auto;
+  transform: translateX(-100%);
+  margin-bottom: 3rem;
+  transition: all 0.7s;
+  z-index: 50;
   scrollbar-width: thin;
 }
 
-.side-menu__chapter {
-  margin: 1rem 0;
+.side-menu .logo {
+  width: 12.5%;
+  height: auto;
+  margin: 5px auto;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .side-menu__chapter__heading {
@@ -20,6 +29,10 @@
 
 .side-menu__chapter__heading:hover {
   background-color: #ffc14f;
+}
+
+.side-menu__chapter__list {
+  margin: 0.8rem 0;
 }
 
 .side-menu__chapter__list__item {
@@ -79,6 +92,10 @@ li {
   width: 90%;
   margin: 2rem auto;
   margin-bottom: 4rem;
+}
+
+.content {
+  transition: all 0.2s;
 }
 
 .content__heading {
@@ -168,6 +185,7 @@ header .name__authors {
 
 header .nav {
   position: fixed;
+  z-index: 10;
   width: 100%;
   left: 0%;
   bottom: 0%;

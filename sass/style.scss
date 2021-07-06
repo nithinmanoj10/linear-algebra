@@ -44,6 +44,7 @@ li {
 }
 
 .content {
+  transition: all 0.2s;
   &__heading {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -140,6 +141,7 @@ header {
 
   .nav {
     position: fixed;
+    z-index: 10;
     width: 100%;
     left: 0%;
     bottom: 0%;

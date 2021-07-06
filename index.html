@@ -32,7 +32,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list__item">
-            <a href="javascript:void(0)" class="nav__list__item__link">
+            <a href="javascript:void(0)" class="nav__list__item__link" id="menuButton">
               <svg class="nav__icon">
                 <use xlink:href = "img/sprite.svg#icon-menu"></use>
               </svg>
@@ -70,6 +70,13 @@
     </header>
 
     <div class="side-menu">
+
+      <img
+        src="https://textbooks.math.gatech.edu/ila/static/images/gatech.gif"
+        alt="Bee Logo"
+        class="logo"
+      />
+
       <div class="side-menu__chapter">
         <a href="#" class="side-menu__chapter__heading"><h4>Front Matter</h4></a>
         <ul class="side-menu__chapter__list">
@@ -89,7 +96,7 @@
       </div>
 
       <div class="side-menu__chapter">
-        <a href="#" class="side-menu__chapter__heading"><h4>Systems of Linaer Equations: Algebra</h4></a>
+        <a href="#" class="side-menu__chapter__heading"><h4>Systems of Linear Equations: Algebra</h4></a>
         <ul class="side-menu__chapter__list">
           <li class="side-menu__chapter__list__item">
             <a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Systems of Linear Equations</a>
@@ -135,6 +142,61 @@
           <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">The Invertible Matrix Theorem</a></li>
         </ul>
       </div>
+
+      <!-- .side-menu__chapter>(a.side-menu__chapter__heading>h4)+ul.side-menu__chapter__list>(li.side-menu__chapter__list__item>a.side-menu__chapter__list__item__link) -->
+      <!-- javascript:void(0) -->
+      <div class="side-menu__chapter">
+        <a href="javascript:void(0)" class="side-menu__chapter__heading">
+          <h4>Determinants</h4>
+        </a>
+        <ul class="side-menu__chapter__list">
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Determinants: Definition</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Cofactor Expansions</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Determinants and Volumes</a></li>
+        </ul>
+      </div>
+
+      <div class="side-menu__chapter">
+        <a href="javascript:void(0)" class="side-menu__chapter__heading">
+          <h4>Eigenvalues and Eigenvectors</h4>
+        </a>
+        <ul class="side-menu__chapter__list">
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Eigenvalues and Eigenvectors</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">The Characteristic Polynomial</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Similarity</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Diagonalization</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Complex Eigenvalues</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Stochastic Matrices</a></li>
+        </ul>
+      </div>
+
+      <div class="side-menu__chapter">
+        <a href="javascript:void(0)" class="side-menu__chapter__heading">
+          <h4>Orthogonality</h4>
+        </a>
+        <ul class="side-menu__chapter__list">
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Dot Products and Orthogonality</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Orthogonal Complements</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Orthogonal Projection</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Orthogonal Sets</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">The Method of Least Squares</a></li>
+        </ul>
+      </div>
+
+      <div class="side-menu__chapter">
+        <a href="javascript:void(0)" class="side-menu__chapter__heading">
+          <h4>Back Matter</h4>
+        </a>
+        <ul class="side-menu__chapter__list">
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Complex Numbers</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Notation</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Hintd and Solutions to Selected Exercise</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">GNU Free Documentation License</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Index</a></li>
+          <li class="side-menu__chapter__list__item"><a href="javascript:void(0)" class="side-menu__chapter__list__item__link">Colophon</a></li>
+        </ul>
+      </div>
+
     </div>
 
     <div class="container">
@@ -211,5 +273,8 @@
         </div>
       </div>
     </div>
+
+    <script src="./script.js"></script>
+
   </body>
 </html>

@@ -1,15 +1,30 @@
 .side-menu {
   background-color: #262626;
   position: fixed;
-  height: 90vh;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
   width: 100%;
+  transform: translateX(-100%);
+  margin-bottom: 3rem;
+  transition: all 0.7s;
+  z-index: 50;
 
-  overflow-y: auto;
+  //   &:hover {
+  //     transform: translateX(0);
+  //   }
 
   scrollbar-width: thin;
 
+  .logo {
+    width: 12.5%;
+    height: auto;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+
   &__chapter {
-    margin: 1rem 0;
     &__heading {
       display: block;
       background-color: #d49318;
@@ -22,6 +37,7 @@
     }
 
     &__list {
+      margin: 0.8rem 0;
       &__item {
         margin: 0;
         &__link {
